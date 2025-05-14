@@ -44,7 +44,11 @@ nav a {
     font-weight: 500;
 }
 
-
+nav a:hover {
+    background-color: #444;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+}
 
 main {
     display: grid;
