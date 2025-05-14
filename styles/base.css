@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Lora:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lora', serif;
+}
+
+header {
+    background-color: #0d2b6c;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.highlight {
+    color: #f4dd0c;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    gap: 10rem;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 1100px;
+    margin: 2rem auto;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+    background-color: #0d2b6c;
+    color: white;
+    padding: 0.5rem;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    margin: -1.5rem -1.5rem 1rem -1.5rem;
+    
+}
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.profile-img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.location {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.location figure {
+    margin: 0;
+    text-align: center;
+}
+
+.location img {
+    width: 160px;
+    border-radius: 4px;
+}
+
+.location figcaption {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.25rem;
+}
+
+.resources ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+}
+
+.resources a {
+    color: #3300cc;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #0d2b6c;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+#lastModified {
+    color: #ffcc00;
+    margin-top: 0.5rem;
+    display: block;
+}
