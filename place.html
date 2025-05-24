@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Place Page - Alaska</title>
+    <link rel="stylesheet" href="styles/place.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Alaska</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <figure>
+                <picture>
+                    <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/hero-large.webp" alt="Alaska landscape" width="1000" height="500">
+                </picture>
+                <figcaption>
+                    Small: Travel Alaska, Jody Overstreet<br>
+                    Large: Rocky Grimes / Alamy Stock Photo
+                </figcaption>
+            </figure>
+
+            <div class="info-sections">
+                <section class="data">
+                    <h2>Data</h2>
+                    <ul>
+                        <li><strong>Area:</strong> 1,723,337 sq km</li>
+                        <li><strong>Population:</strong> 733,391</li>
+                        <li><strong>Capital:</strong> Juneau</li>
+                        <li><strong>Languages:</strong> English</li>
+                        <li><strong>Currency:</strong> US Dollar</li>
+                        <li><strong>Time Zone:</strong> UTC-9 (AKST)</li>
+                        <li><strong>Calling Code:</strong> +1</li>
+                        <li><strong>Internet TLD:</strong> .us</li>
+                    </ul>
+                </section>
+
+                <section class="weather">
+                    <h2>Weather</h2>
+                    <img src="images/weather-icon.svg" alt="Weather icon" width="64" height="64" />
+                    <ul>
+                        <li><strong>Temperature:</strong> -5°C</li>
+                        <li><strong>Conditions:</strong> Snowy</li>
+                        <li><strong>Wind:</strong> 15 km/h</li>
+                        <li><strong>Wind Chill:</strong> <span id="windChill">Loading...</span></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="year"></span> 🦌 Lyle Hanchett 🦌 Alaska<br>
+            Last Modification: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+
+</html>
