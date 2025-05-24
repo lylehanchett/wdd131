@@ -115,6 +115,19 @@ section h2 {
     padding-right: 2.5rem;
 }
 
+.weather h2::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    background-image: url('../images/weather-icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 section ul {
     list-style: none;
@@ -144,13 +157,11 @@ section li strong {
     height: 56px;
 }
 
-
 @media (min-width: 1025px) {
     .weather img {
         display: none;
     }
 }
-
 
 @media (max-width: 1024px) {
     .weather img {
