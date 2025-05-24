@@ -112,25 +112,9 @@ section h2 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     position: relative;
-    /* for pseudo-element */
     padding-right: 2.5rem;
-    /* space for icon */
 }
 
-/* Pseudo-element for weather icon next to Weather heading on large screens */
-.weather h2::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 1rem;
-    transform: translateY(-50%);
-    width: 60px;
-    height: 60px;
-    background-image: url('../images/weather-icon.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
 
 section ul {
     list-style: none;
@@ -160,14 +144,14 @@ section li strong {
     height: 56px;
 }
 
-/* Hide the original weather img on large screens */
+
 @media (min-width: 1025px) {
     .weather img {
         display: none;
     }
 }
 
-/* Show the original weather img on medium and smaller screens */
+
 @media (max-width: 1024px) {
     .weather img {
         display: block;
@@ -238,7 +222,6 @@ footer p {
         font-size: 1rem;
         padding: 0.2rem 0.2rem;
         padding-right: 1.5rem;
-        /* less space for smaller icon if needed */
     }
 
     section li {
