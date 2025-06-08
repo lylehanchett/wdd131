@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="This page is for the project installation page">
+  <meta name="author" content="Lyle Hanchett">
+  <link rel="stylesheet" href="styles/project.css" />
+</head>
+<body data-page="installation">
+  <header>
+    <div class="container">
+      <h1 class="logo">DLB Integrators</h1>
+      <button class="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="custom-equipment.html">Custom Equipment</a></li>
+          <li><a href="installation.html" aria-current="page">Installation</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero">
+      <h2>Professional Installation of Automated Systems</h2>
+      <p>
+        DLB Integrators offers expert installation of conveyors and automated equipment, ensuring smooth integration and compliance with washdown standards.
+      </p>
+      <img src="images/installation-1.jpg" alt="Technician installing automated conveyor system" loading="lazy" />
+    </section>
+
+    <section id="service-details">
+    </section>
+
+    <section>
+      <h3>Our Installation Process</h3>
+      <p>
+        Our team works closely with your facility to plan, install, and test automated equipment, reducing downtime and increasing efficiency.
+      </p>
+      <img src="images/installation-2.jpg" alt="Installed stainless steel conveyor system" loading="lazy" />
+    </section>
+
+    <section>
+      <h3>Contact Us</h3>
+      <p>If you want to learn more about our installation services or request a quote, please use the inquiry form below:</p>
+      <form id="inquiry-form" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Submit Inquiry</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 DLB Integrators — Lyle Hanchett</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+  <script src="scripts/project.js" defer></script>
+</body>
+</html>
