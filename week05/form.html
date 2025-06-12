@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This page is the main page for the form for product review">
+    <meta name="author" content="Lyle Hanchett">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form.css" />
+</head>
+
+<body>
+
+    <main>
+        <h1>Product Review Form</h1>
+        <form action="review.html" method="get">
+
+            <label for="product">Product Name:</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <fieldset>
+                <legend>Overall Rating:</legend>
+                <label><input type="radio" name="rating" id="rate1" value="1" required> ☆</label>
+                <label><input type="radio" name="rating" id="rate2" value="2"> ☆☆</label>
+                <label><input type="radio" name="rating" id="rate3" value="3"> ☆☆☆</label>
+                <label><input type="radio" name="rating" id="rate4" value="4"> ☆☆☆☆</label>
+                <label><input type="radio" name="rating" id="rate5" value="5"> ☆☆☆☆☆</label>
+            </fieldset>
+
+            <label for="installDate">Date of Installation:</label>
+            <input type="date" id="installDate" name="installDate" required />
+
+            <fieldset>
+                <legend>Useful Features:</legend>
+                <label><input type="checkbox" id="feature1" name="features" value="Durable"> Durable</label>
+                <label><input type="checkbox" id="feature2" name="features" value="Easy to Clean"> Easy to Clean</label>
+                <label><input type="checkbox" id="feature3" name="features" value="Compact Design"> Compact
+                    Design</label>
+            </fieldset>
+
+            <label for="review">Written Review:</label>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+            <label for="username">Your Name:</label>
+            <input type="text" id="username" name="username" />
+
+            <input type="submit" value="Submit Review" />
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lyle Hanchett.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>

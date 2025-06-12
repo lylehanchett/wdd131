@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This page is the review submitted page and counter">
+    <meta name="author" content="Lyle Hanchett">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="styles/form.css" />
+</head>
+
+<body>
+    <main>
+        <h1>Thank You!</h1>
+        <p>Your review has been submitted.</p>
+        <p>You have submitted <span id="reviewCount"></span> review(s).</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lyle Hanchett.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        let count = localStorage.getItem('reviewCount') || 0;
+        count++;
+        localStorage.setItem('reviewCount', count);
+        document.getElementById('reviewCount').textContent = count;
+    </script>
+</body>
+
+</html>

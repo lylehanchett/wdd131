@@ -1,0 +1,26 @@
+@media screen and (min-width: 600px) {
+    .menu-items {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        background: none;
+        padding: 0;
+        gap: 3rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    main {
+        max-width: 1500px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        /* Wider cards */
+        gap: 2rem;
+    }
+}
