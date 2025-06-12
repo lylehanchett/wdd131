@@ -1,4 +1,4 @@
-// Product data array
+
 const products = [
     { id: 'p1', name: 'Super Blender 3000' },
     { id: 'p2', name: 'Mega Vacuum X' },
@@ -9,17 +9,14 @@ const products = [
     { id: 'p7', name: 'NK Shoes' }
 ];
 
-window.addEventListener('DOMContentLoaded', () => {
-    const productSelect = document.getElementById('product');
-
-    products.forEach(product => {
-        const option = document.createElement('option');
-        option.value = product.id;
-        option.textContent = product.name;
-        productSelect.appendChild(option);
-    });
+const productSelect = document.getElementById('product');
+products.forEach(product => {
+    const option = document.createElement('option');
+    option.value = product.id;
+    option.textContent = product.name;
+    productSelect.appendChild(option);
 });
-  
+
 const yearSpan = document.getElementById("currentyear");
 if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
@@ -29,3 +26,4 @@ const lastModPara = document.getElementById("lastModified");
 if (lastModPara) {
     lastModPara.textContent = "Last Modification: " + document.lastModified;
 }
+  
