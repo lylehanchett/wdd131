@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.5;
@@ -25,6 +27,7 @@ fieldset,
 legend {
     display: block;
     margin-top: 1rem;
+    font-weight: bold;
 }
 
 input,
@@ -36,6 +39,7 @@ textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family: inherit;
 }
 
 input[type="radio"],
@@ -53,6 +57,7 @@ input[type="submit"] {
     cursor: pointer;
     width: 100%;
     border-radius: 4px;
+    font-size: 1rem;
 }
 
 input[type="submit"]:hover {
@@ -64,4 +69,5 @@ footer {
     padding: 1rem;
     background: #123a63;
     color: white;
+    margin-top: 2rem;
 }
