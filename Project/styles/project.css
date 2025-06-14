@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +18,7 @@ body {
   padding: 1rem;
 }
 
-/* Header and Navigation */
+
 header,
 footer {
   background-color: #123a63;
@@ -73,7 +73,7 @@ nav a[aria-current="page"] {
   display: none;
 }
 
-/* Main content */
+
 main section {
   padding: 2rem 0;
   border-bottom: 1px solid #ccc;
@@ -87,6 +87,9 @@ h1,
 h3 {
   margin-bottom: 1rem;
   color: #123a63;
+}
+h3 {
+  font-size: x-large;
 }
 
 p {
@@ -144,7 +147,7 @@ img {
   gap: 1.5rem;
 }
 
-/* Forms */
+
 form {
   display: flex;
   flex-direction: column;
@@ -172,7 +175,7 @@ button:hover {
   background-color: #0f2f50;
 }
 
-/* Responsive adjustments */
+
 @media screen and (max-width: 768px) {
   .header-content {
     flex-direction: column;
